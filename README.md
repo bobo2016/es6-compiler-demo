@@ -1,1 +1,1 @@
-# es6-compiler-demo
+# ES6-compiler-demo
