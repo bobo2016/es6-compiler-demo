@@ -108,6 +108,42 @@
 
 		console.log(p);
 
+		//Arrows
+		//lexical this
+		var bob = {
+			_name: "Bob",
+			_friends: [],
+			printFriends(){
+				this._friends.forEach(f => console.log(this._name + " knows " + f));
+			}
+		}
+
+		var evens = [2,4,6,8,10],
+			five = [];
+		evens.forEach(v => {
+			if(v%2 === 0){
+				five.push(v);	
+			}
+		})
+		console.log(five);
+		console.log(bob);
+
+		//template string
+		var name = "bob", time="today";
+		`hello ${name},how are you${time}?`
+
+		//list matching
+		var [a,,b]=[1,2,3];
+			arr = [a,,b];
+		console.log(arr);
+
+		function f(x, y=12){
+			return x + y;
+		}
+		console.log(f(3,19));
+
+		//Let + const
+		
 
 	</script>
 
